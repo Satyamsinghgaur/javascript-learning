@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Js dom</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+
+
+    <button>click me 1</button>
+    <button>click me 2</button>
+    <button>click me 3</button>
+    <button>click me 4</button>
+    <script>
+
+        // function sayHello(){
+        //     alert("Say Hello");
+        // }
+
+        // let btns = document.querySelectorAll("button");
+        // for(btn of btns){
+        //     btn.onclick = sayHello;
+        //     btn.onmouseenter = function(){
+        //         console.log("You enterd the button");
+        //     }
+        // }
+        
+        //Event Listner
+        let btns = document.querySelectorAll("button");
+        for (btn of btns){
+            btn.addEventListener("click", sayHello);
+            btn.addEventListener("click", greating);
+        }
+        function sayHello(){
+            console.log("Hello and Welcome.");
+        }
+        function greating(){
+            console.log("Namaste");
+        }
+    </script>
+
+
+</body>
+</html>
